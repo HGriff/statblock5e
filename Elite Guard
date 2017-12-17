@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Elite Guard</title>
+
+    <link rel="import" href="src/top-stats.html">
+    <link rel="import" href="src/creature-heading.html">
+    <link rel="import" href="src/abilities-block.html">
+    <link rel="import" href="src/property-block.html">
+    <link rel="import" href="src/property-line.html">
+    <link rel="import" href="src/stat-block.html">
+
+    <style>
+      body {
+        margin: 0;
+      }
+      stat-block {
+        /* A bit of margin for presentation purposes, to show off the drop
+        shadow. */
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+  <stat-block>
+    <creature-heading>
+      <h1>Silis' Elite Guard</h1>
+      <h2>Medium Humanoid, Neutral</h2>
+    </creature-heading>
+
+    <top-stats>
+      <property-line>
+        <h4>Armor Class</h4>
+        <p>16 (+1 for shield)</p>
+      </property-line>
+      <property-line>
+        <h4>Hit Points</h4>
+        <p>24</p>
+      </property-line>
+      <property-line>
+        <h4>Speed</h4>
+        <p>30ft</p>
+      </property-line>
+
+      <abilities-block data-str="16"
+                       data-dex="10"
+                       data-con="12"
+                       data-int="10"
+                       data-wis="9"
+                       data-cha="7"></abilities-block>
+
+      <property-line>
+        <h4>Damage Immunities</h4>
+        <p>n/a</p>
+      </property-line>
+      <property-line>
+        <h4>Condition Immunities</h4>
+        <p>Dominated, Charmed</p>
+      </property-line>
+      <property-line>
+        <h4>Senses</h4>
+        <p>Perception 11</p>
+      </property-line>
+      <property-line>
+        <h4>Languages</h4>
+        <p>n/a</p>
+      </property-line>
+      <property-line>
+        <h4>Challenge</h4>
+        <p>2</p>
+      </property-line>
+    </top-stats>
+      
+    <property-block>
+      <h4>Absolute Resolve</h4>
+      <p> The Elite Guard is immune to intimidation, unless its master is intimidated.</p>
+    </property-block>
+
+    <h3>Actions</h3>
+
+    <property-block>
+      <h4>Multiattack.</h4>
+      <p>The Guard can attack two times if it is holding a one-handed weapon.</p>
+    </property-block>
+
+    <property-block>
+      <h4>Obsidian Sword.</h4>
+      <p><i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target.
+        <i>Hit:</i>(3d4 +3) slashing damage.</p>
+    </property-block>
+      
+      <property-block>
+      <h4>Obsidian Club.</h4>
+      <p><i>Melee Weapon Attack:</i> +6 to hit, reach 8 ft., one target.
+          <i>Hit:</i>(1d12 + 4) blugeoning/piercinging damage.</p>
+    </property-block>
+      
+  </stat-block>
+</body>
+</html>
