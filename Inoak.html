@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Silis</title>
+
+    <link rel="import" href="src/top-stats.html">
+    <link rel="import" href="src/creature-heading.html">
+    <link rel="import" href="src/abilities-block.html">
+    <link rel="import" href="src/property-block.html">
+    <link rel="import" href="src/property-line.html">
+    <link rel="import" href="src/stat-block.html">
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      stat-block {
+        /* A bit of margin for presentation purposes, to show off the drop
+        shadow. */
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+  <stat-block>
+    <creature-heading>
+      <h1>Ino'ak</h1>
+      <h2>Large Abyssal, Lawful Evil</h2>
+    </creature-heading>
+
+    <top-stats>
+      <property-line>
+        <h4>Armor Class</h4>
+        <p>17 (Molten armor)</p>
+      </property-line>
+      <property-line>
+        <h4>Hit Points</h4>
+        <p>134</p>
+      </property-line>
+      <property-line>
+        <h4>Speed</h4>
+        <p>25ft land/lava swim</p>
+      </property-line>
+
+      <abilities-block data-str="18"
+                       data-dex="12"
+                       data-con="19"
+                       data-int="10"
+                       data-wis="12"
+                       data-cha="14"></abilities-block>
+
+      <property-line>
+        <h4>Saving Throws</h4>
+        <p>Dex +5, Wis +2, Int +3</p>
+      </property-line>
+      <property-line>
+        <h4>Damage Vulnerabilities</h4>
+        <p>cold</p>
+      </property-line>
+      <property-line>
+        <h4>Damage Immunities</h4>
+        <p>poison, fire</p>
+      </property-line>
+      <property-line>
+        <h4>Condition Immunities</h4>
+        <p>poisoned, prone</p>
+      </property-line>
+      <property-line>
+        <h4>Senses</h4>
+        <p>darkvision 60 ft. passive Perception 11</p>
+      </property-line>
+      <property-line>
+        <h4>Languages</h4>
+        <p>Common, Abyssal</p>
+      </property-line>
+      <property-line>
+        <h4>Challenge</h4>
+        <p>7</p>
+      </property-line>
+    </top-stats>
+
+    <property-block>
+      <h4>Aura of Fire.</h4>
+      <p>At the start of each of Ino'ak's turns, each creature within a 5 foot radius takes 2d6 fire damage, and any flammable
+      objects not being worn or carried catch fire. Any character that touchs Ino'ak witha melee attack also takes this damage.</p>
+    </property-block>
+      
+
+    <h3>Actions</h3>
+
+    <property-block>
+      <h4>Multiattack.</h4>
+      <p>Ino'ak can choose to attack twice using any of it's attacks.</p>
+    </property-block>
+
+    <property-block>
+      <h4>Lava Lance.</h4>
+      <p><i>Melee Weapon Attack:</i> +6 to hit, reach 20 ft., one target.
+        <i>Hit:</i>(3d6) piercinging/fire damage.</p>
+    </property-block>
+      
+      <property-block>
+      <h4>Sweep.</h4>
+      <p><i>Hand Attack:</i> DC 14 Dexterity, reach 10 ft.
+          <i>Hit:</i>(2d8) bludgeoning damage, and the target is knocked <i>Prone</i>.</p>
+    </property-block>
+    
+     <property-block>
+      <h4>Hurl Flame.</h4>
+      <p><i>Ranged Spell Attack:</i> +6 to hit, reach 60 ft., one target.
+        <i>Hit:</i>(4d6) fire damage.</p>
+    </property-block>
+      
+  </stat-block>
+</body>
+</html>
